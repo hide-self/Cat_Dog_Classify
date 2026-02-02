@@ -36,7 +36,7 @@ def predict_single_image(model,image_path,transform,device):
 if __name__=='__main__':
     # 示例使用（需要实际图像文件）
     # 加载模型
-    model = GoogLeNet(num_classes=10)
+    model = GoogLeNet(num_classes=2)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.load_state_dict(torch.load('./best_model.pth', map_location=device))
     # 图像预处理

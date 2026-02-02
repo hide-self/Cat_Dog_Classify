@@ -75,7 +75,7 @@ def whole_train_test_process():
     test_loader=get_test_dataloader(batch_size=batch_size)
 
     # 模型
-    model=GoogLeNet(num_classes=10)
+    model=GoogLeNet(num_classes=2)
     model=model.to(device)
 
     # 损失函数
